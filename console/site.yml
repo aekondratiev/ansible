@@ -1,0 +1,11 @@
+---
+- name: Install bash aliases, tmux and screen settings
+  hosts: all
+  remote_user: root
+  # remote_user: user
+  # sudo: yes
+
+  roles:
+    - bash
+    - screen
+    - tmux

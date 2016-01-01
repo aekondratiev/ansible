@@ -1,0 +1,8 @@
+- name: Install screen
+  yum: name={{ item }} state=present
+  with_items:
+   - screen
+
+- name: Copy screenrc
+  copy: src=screenrc dest=/etc/screenrc
+

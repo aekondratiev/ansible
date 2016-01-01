@@ -1,0 +1,6 @@
+- name: Install bashrc
+  copy: src=bashrc.sh dest=/etc/profile.d/bashrc.sh
+
+- name: Install bashrc
+  copy: src=colorls.sh dest=/etc/profile.d/colorls.sh
+
